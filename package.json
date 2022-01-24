@@ -10,7 +10,7 @@
     "start": "node src/server.js",
     "cluster": "pm2 start src/server.js -i max",
     "kill-all-clusters": "pm2 delete all",
-    "lint-fix": "eslint --fix ./*.js"
+    "lint-fix": "eslint --fix"
   },
   "keywords": [],
   "author": "",
