@@ -1,15 +1,8 @@
 const express = require('express');
-
-
-const planetsRouter = require('./planets/planets.router');
-const launchesRouter = require('./launches/launches.router');
-
-const a = 1;
-
+const examplesRouter = require('./examples/examples.router');
 
 const api = express.Router();
 
-api.use('/planets', planetsRouter);
-api.use('/launches', launchesRouter);
+api.use('/examples', examplesRouter);
 
 module.exports = api;

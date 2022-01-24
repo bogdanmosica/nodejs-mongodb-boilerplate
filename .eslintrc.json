@@ -1,0 +1,57 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "google",
+        "plugin:import/recommended",
+        "plugin:import/warnings",
+        "plugin:node/recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "import/default": 2,
+        "import/export": 2,
+        "import/named": 2,
+        "import/namespace": 2,
+        "import/no-unresolved": [
+            2,
+            {
+                "amd": true,
+                "commonjs": true
+            }
+        ],
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "new-cap": [
+            "error",
+            {
+                "capIsNewExceptionPattern": "^express\\.."
+            }
+        ],
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "require-jsdoc": "off",
+        "node/no-unpublished-require": [
+            "error",
+            {
+                "allowModules": [
+                    "supertest"
+                ]
+            }
+        ]
+    }
+}
